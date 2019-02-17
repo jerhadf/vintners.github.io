@@ -2,14 +2,14 @@ import NotFound from "~/pages/404.vue"
 
 export const routes = [
   {
-    name: "about",
-    path: "/about",
-    component: () => import(/* webpackChunkName: "component--about" */ "~/pages/About.vue")
-  },
-  {
     name: "home",
     path: "/",
     component: () => import(/* webpackChunkName: "component--home" */ "~/pages/Index.vue")
+  },
+  {
+    name: "about",
+    path: "/about",
+    component: () => import(/* webpackChunkName: "component--about" */ "~/pages/About.vue")
   },
   {
     path: "/blog/metaphor-of-light",
@@ -72,12 +72,12 @@ export const routes = [
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20150124-40",
+    path: "/blog/wordpress/posts/20150124-gaysavar",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20150124-gaysavar",
+    path: "/blog/wordpress/posts/20150124-40",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -147,12 +147,12 @@ export const routes = [
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20160917-ayn-rand-selfishness-bent-books",
+    path: "/blog/wordpress/posts/20161024-matters-president-electability-doesnt",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20161024-matters-president-electability-doesnt",
+    path: "/blog/wordpress/posts/20160917-ayn-rand-selfishness-bent-books",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },

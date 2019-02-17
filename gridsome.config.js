@@ -5,9 +5,20 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Jeremy',
   siteUrl: "https://jeremyhadfield.com",
   siteDescription: "Student at Dartmouth College 🤠",
-  icon: "src/favicon.png",
-  plugins: []
+  icon: "src/favicon-32x32.png",
+  transformers: {
+    remark: {}
+  },
+  plugins: [
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "blog/**/*.md",
+        typeName: "Post"
+      }
+    }
+  ]
 }

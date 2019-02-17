@@ -17,3 +17,8 @@ Run `npm install` to automatically install all dependencies for this project. Al
 6. To ensure on latest version: `npm install gridsome@latest`
 
 Then run `gridsome develop`. 
+
+### Tools Used
+
+1. Gridsome: `npm install --global @gridsome/cli`
+2. Vuetify: `vue add vuetify`

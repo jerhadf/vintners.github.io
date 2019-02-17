@@ -10,6 +10,16 @@ export const routes = [
     name: "about",
     path: "/about",
     component: () => import(/* webpackChunkName: "component--about" */ "~/pages/About.vue")
+  },
+  {
+    path: "/blog/metaphor-of-light",
+    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/blog/routine",
+    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
+    meta: { data: true }
   }
 ]
 

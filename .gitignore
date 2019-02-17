@@ -331,3 +331,10 @@ ASALocalRun/
 
 # ignore auto-generated site files from Jekyll
 _site/
+
+# Various filestypes for Gridsome
+*.log
+.DS_Store
+node_modules
+coverage
+dist

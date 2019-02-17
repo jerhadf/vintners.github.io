@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.4.0"
+    "gridsome": "^0.4.7"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.2.0",

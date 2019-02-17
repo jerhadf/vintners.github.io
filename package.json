@@ -8,11 +8,15 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
-    "@gridsome/source-contentful": "^0.2.1",
     "@gridsome/source-wordpress": "^0.2.1",
     "gridsome": "^0.4.7",
+    "bulma": "^0.7.2",
     "gridsome-plugin-remark-shiki": "^0.1.0",
-    "gridsome-plugin-remark-twitter": "^0.1.0"
+    "gridsome-plugin-remark-twitter": "^0.1.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.2.0",

@@ -9,20 +9,22 @@ module.exports = {
   siteUrl: "https://jeremyhadfield.com",
   siteDescription: "Student at Dartmouth College 🤠",
   icon: "src/img/favicon-32x32.png",
-  transformers: {
-    remark: {
-      plugins: [
-        [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ], 
-        [ 'gridsome-plugin-remark-twitter', {} ]
-      ]
-    }
-  },
   plugins: [
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "blog/*.md",
-        typeName: "Post"
+        path: "blog/**/*.md",
+        typeName: "Post", 
+        remark: {
+          autolinkClassName: 'fas fa-hashtag',
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+          plugins: [
+            // | quietlight | Material-Theme-Default 
+            [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ],
+            [ 'gridsome-plugin-remark-twitter', {} ]
+          ]
+        }
       }
     }
   ]

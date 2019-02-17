@@ -1,15 +1,15 @@
-import NotFound from "c:\\Users\\Guest User\\Desktop\\Coding\\projects\\vintners.github.io\\node_modules\\gridsome\\app\\pages\\404.vue"
+import NotFound from "~/pages/404.vue"
 
 export const routes = [
-  {
-    name: "home",
-    path: "/",
-    component: () => import(/* webpackChunkName: "component--home" */ "~/pages/Index.vue")
-  },
   {
     name: "about",
     path: "/about",
     component: () => import(/* webpackChunkName: "component--about" */ "~/pages/About.vue")
+  },
+  {
+    name: "home",
+    path: "/",
+    component: () => import(/* webpackChunkName: "component--home" */ "~/pages/Index.vue")
   },
   {
     path: "/blog/metaphor-of-light",
@@ -27,6 +27,11 @@ export const routes = [
     meta: { data: true }
   },
   {
+    path: "/blog/wordpress/drafts/125",
+    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
+    meta: { data: true }
+  },
+  {
     path: "/blog/wordpress/drafts/143",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
@@ -37,17 +42,7 @@ export const routes = [
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/drafts/125",
-    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
-    meta: { data: true }
-  },
-  {
     path: "/blog/wordpress/drafts/212",
-    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
-    meta: { data: true }
-  },
-  {
-    path: "/blog/wordpress/drafts/227",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -57,7 +52,7 @@ export const routes = [
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/drafts/377",
+    path: "/blog/wordpress/drafts/227",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -72,7 +67,17 @@ export const routes = [
     meta: { data: true }
   },
   {
+    path: "/blog/wordpress/drafts/377",
+    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
+    meta: { data: true }
+  },
+  {
     path: "/blog/wordpress/posts/20150124-40",
+    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/blog/wordpress/posts/20150124-gaysavar",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -87,12 +92,7 @@ export const routes = [
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20150124-gaysavar",
-    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
-    meta: { data: true }
-  },
-  {
-    path: "/blog/wordpress/posts/20150124-the-incompatibility-of-kantianism-and-christianity",
+    path: "/blog/wordpress/posts/20150124-synaptic-pruning",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -102,12 +102,12 @@ export const routes = [
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20150124-the-tooth-breaker",
+    path: "/blog/wordpress/posts/20150124-the-incompatibility-of-kantianism-and-christianity",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20150124-synaptic-pruning",
+    path: "/blog/wordpress/posts/20150124-the-tooth-breaker",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -137,17 +137,12 @@ export const routes = [
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20160905-ethical-commodities-products-say-person",
-    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
-    meta: { data: true }
-  },
-  {
     path: "/blog/wordpress/posts/20160623-existentialism-in-javascript",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20161024-matters-president-electability-doesnt",
+    path: "/blog/wordpress/posts/20160905-ethical-commodities-products-say-person",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -157,7 +152,17 @@ export const routes = [
     meta: { data: true }
   },
   {
+    path: "/blog/wordpress/posts/20161024-matters-president-electability-doesnt",
+    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
+    meta: { data: true }
+  },
+  {
     path: "/blog/wordpress/posts/20161117-why-i-love-the-office",
+    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/blog/wordpress/posts/20170104-gradual-causes-long-history-fake-news-crisis",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -172,7 +177,7 @@ export const routes = [
     meta: { data: true }
   },
   {
-    path: "/blog/wordpress/posts/20170104-gradual-causes-long-history-fake-news-crisis",
+    path: "/blog/wordpress/posts/20170121-kierkegaardian-approach-philosophy-replacing-objective-career-subjective-relationship",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },
@@ -188,11 +193,6 @@ export const routes = [
   },
   {
     path: "/blog/wordpress/posts/20170516-moving-out",
-    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
-    meta: { data: true }
-  },
-  {
-    path: "/blog/wordpress/posts/20170121-kierkegaardian-approach-philosophy-replacing-objective-career-subjective-relationship",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
   },

@@ -1,11 +1,12 @@
 --
-slug: hello-gridsome
-title: Hello, Gridsome! 
+slug: first-post
+title: Hello, Gridsome!
 date: 2019-01-31 10:00:00
 published: true
 excerpt: A quick write up on why I started a new blog and what I plan to do with it.
 tags: vue
 cover: gridsome.png
+timeToRead: 5
 ---
 
 I would like to welcome you to a new side project of mine. I thought I would take this opportunity to tell you about the motivation behind creating this website and the technologies that power it.

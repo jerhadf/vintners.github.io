@@ -12,4 +12,6 @@
 
 5. `npm install gridsome-plugin-remark-twitter`
 
+6. To ensure on latest version: `npm install gridsome@latest`
+
 Then run `gridsome develop`. 

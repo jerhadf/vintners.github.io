@@ -2,6 +2,8 @@
 
 ### Package installation
 
+Run `npm install` to automatically install all dependencies for this project. Alternatively, install them individually:
+
 1. `npm install --global @gridsome/cli`
 
 2. `npm install @gridsome/transformer-remark`

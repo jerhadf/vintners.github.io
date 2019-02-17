@@ -17,6 +17,11 @@ export const routes = [
     meta: { data: true }
   },
   {
+    path: "/blog/sample",
+    component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
+    meta: { data: true }
+  },
+  {
     path: "/blog/routine",
     component: () => import(/* webpackChunkName: "component--post" */ "~/templates/Post.vue"),
     meta: { data: true }
